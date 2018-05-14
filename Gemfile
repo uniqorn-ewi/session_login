@@ -33,6 +33,8 @@ gem 'bcrypt', '3.1.11'
 
 gem 'dotenv-rails'
 
+gem 'faker'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
