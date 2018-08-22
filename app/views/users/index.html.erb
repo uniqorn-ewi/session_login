@@ -1,0 +1,9 @@
+<h2>ユーザー</h2>
+<% @users.each do |user| %>
+  <%= link_to user.name, user_path(user.id) %>|<%= user.email %>
+  <% if current_user.id != user.id %>
+  <%= render 'follow_form', user: user %>
+  <% else %>
+  <div></div>
+  <% end %>
+<% end %>

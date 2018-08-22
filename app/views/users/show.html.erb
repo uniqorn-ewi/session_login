@@ -1,3 +1,15 @@
 <h1><%= @user.name %>のページ</h1>
 
 <p>メールアドレス: <%= @user.email %></p>
+
+<p>Followed user</p>
+<% @user.following.each do |followed_user| %>
+  <%= followed_user.name %>
+  <%= followed_user.email %>
+<% end %>
+
+<p>Follower</p>
+<% @user.followers.each do |follower_user| %>
+  <%= follower_user.name %>
+  <%= follower_user.email %>
+<% end %>
