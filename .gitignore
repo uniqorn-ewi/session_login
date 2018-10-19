@@ -13,7 +13,9 @@
 !/log/.keep
 !/tmp/.keep
 
-/node_modules
+/node_modules/jquery/*
+!/node_modules/jquery/.keep
+
 /yarn-error.log
 
 .byebug_history
